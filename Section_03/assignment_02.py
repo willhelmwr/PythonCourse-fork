@@ -8,7 +8,12 @@
 """
 # Your Code Below:
 
+def separate(some_string):
+    # both are ok
+    # return [i for i in some_string]
+    return list(some_string)
 
+print(separate("Sample sentence."))
 
 
 

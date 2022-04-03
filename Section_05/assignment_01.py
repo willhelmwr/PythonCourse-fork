@@ -14,50 +14,70 @@ dog, fish and bird and make them eat and move.
 """
 # Your Code Below:
 
+class Animal:
+
+    def __init__(self):
+        print("\n\nAnimal constructing...")
+
+    def move(self):
+        print("animal moves")
+
+    def eat(self):
+        print("animal eats")
+
+
+class Dog(Animal):
+
+    def __init__(self, name, age):
+        Animal.__init__(self)
+        self.name = name
+        self.age = age
+        print("I'm a dog!")
+
+    def move(self):
+        print("I like to walk and run")
 
 
 
+class Bird(Animal):
 
+    def __init__(self, name, age):
+        Animal.__init__(self)
+        self.name = name
+        self.age = age
+        print("I'm a bird!")
 
+    def move(self):
+        print("I like to fly in the sky")
 
+    # def eat(self):
+    #     print("I like to eat seed")
 
+class Fish(Animal):
 
+    def __init__(self, name, age):
+        Animal.__init__(self)
+        self.name = name
+        self.age = age
+        print("I'm a fish!")
 
+    def move(self):
+        print("I like to swim in the water")
+    #
+    # def eat(self):
+    #     print("I like to eat small seeds")
 
+dog1 = Dog("Reksio", 3)
+dog1.move()
+dog1.eat()
 
+bird1 = Bird("Kanarek", 2)
+bird1.move()
+bird1.eat()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+fish1 = Fish("Rekin", 1)
+fish1.move()
+fish1.eat()
 
 
 

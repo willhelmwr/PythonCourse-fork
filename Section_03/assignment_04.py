@@ -15,7 +15,10 @@ Example:
 # Your code below:
 
 
+def last_list(*args):
+    return args[-1]
 
+print(last_list([1,2,3], ['a','b','c'], ['this','is','a','list']))
 
 
 

@@ -13,6 +13,10 @@ argument as individual elements in the list.
 
 
 
+def multi_merge(list_a, a_string):
+    return list_a + a_string.split() + list(a_string)
+
+print(multi_merge([1, 2, 3], "a word"))
 
 
 

@@ -39,6 +39,17 @@ d= {
 # Your Code Below:
 # --------------------------------------
 
+for i in range(len(fr)):
+    key = fr[i].split("|")[0]
+    values = list(map(int, d.values()))
+    try:
+        fr[i] = fr[i].replace(fr[i].split("|")[0], d[key])
+    except:
+        d[fr[i].split("|")[0]] = max(values) + 1
+        fr[i] = fr[i].replace(fr[i].split("|")[0], str(max(values) + 1))
+        # print(values)
+
+
 
 
 

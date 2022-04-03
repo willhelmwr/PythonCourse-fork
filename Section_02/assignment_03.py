@@ -13,6 +13,15 @@ original_list = ['cup', 'cereal', 'milk', (8, 4, 3)]
 
 # your code below:
 
+my_list = sorted(original_list[3])
+print(my_list)
+
+original_list[3] = tuple(sorted(original_list[3]))
+
+print(original_list)
+
+
+
 
 
 

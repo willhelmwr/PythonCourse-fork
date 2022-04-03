@@ -11,6 +11,18 @@ who owns a bike, a laptop and boat.
 
 # your code below:
 
+guys = {
+        'Tom': {'salary': 20000, 'age': 22, 'owns': ['jacket', 'car', 'TV'] },
+        'Mike': {'salary': 24000, 'age': 27, 'owns': ['bike', 'laptop', 'boat'] }
+}
+guys2 = [
+        {'Tom': {'salary': 20000, 'age': 22, 'owns': ['jacket', 'car', 'TV'] }},
+        {'Mike': {'salary': 24000, 'age': 27, 'owns': ['bike', 'laptop', 'boat'] }}
+]
+
+print(guys['Tom'])
+print(guys2[1])
+
 
 
 

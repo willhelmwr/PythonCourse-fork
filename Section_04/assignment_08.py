@@ -16,15 +16,22 @@ sum78([1, 1, 7, 8, 2]) → 4
 
 #Your Code Below:
 
-
-
-
-
-
-
-
-
-
+def sum78(num_list):
+    sum = 0
+    flag = True
+    for i in num_list:
+        # print(i)
+        if i == 7:
+            # print("startujemy!!!!")
+            flag = False
+        if flag:
+            # print(flag)
+            sum += i
+        if i == 8:
+            # print('Konczymy!')
+            flag = True
+    # print('\n\n\n\n')
+    return sum
 
 
 

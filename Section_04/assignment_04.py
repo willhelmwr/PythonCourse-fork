@@ -11,9 +11,16 @@ grow_string('ab') → 'aab'
 
 # Your Code Below:
 
+def grow_string(word):
+    new_word = ''
+    for i in range(len(word)):
+        new_word += word[:i+1]
+    print(new_word)
 
 
-
+grow_string('Code') #→ 'CCoCodCode'
+grow_string('abc') #→ 'aababc'
+grow_string('ab') #→ 'aab'
 
 
 

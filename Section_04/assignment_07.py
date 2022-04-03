@@ -14,10 +14,18 @@ EXAMPLE:
 
 #Your Code Below:
 
+def string_match(a, b):
+    counter = 0
+    # for i in range((len(a)-1 if len(a)<=len(b) else len(b)-1)):
+    for i in range(min(len(a), len(b))-1):
+        if a[i] == b[i] and a[i+1] == b[i+1]:
+            counter += 1
+    print(counter)
 
 
-
-
+string_match('xxcaazz', 'xxbaaz') #→ 3
+string_match('abc', 'abc') #→ 2
+string_match('abc', 'axc') #→ 0
 
 
 

@@ -19,9 +19,19 @@ Example:
 
 # Your Code Below:
 
+def pay_extra(working, hour):
+    if (working and (hour < 8 or hour > 20)):
+        # if (hour < 8 or hour > 20):
+        #     print(True)
+        # else:
+        #     print(False)
+        print(True)
+    else:
+        print(False)
 
-
-
+pay_extra(True, 11) #-> false
+pay_extra(False, 5) #-> false
+pay_extra(True, 6)  #-> true
 
 
 

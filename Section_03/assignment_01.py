@@ -7,7 +7,13 @@
 
 # your code below:
 
+list_a = [1, 3, 5, 7, 9]
+list_b = [2, 4, 6, 8, 0]
 
+def merge_lists(a,  b):
+    return sorted(a + b)
+
+print(merge_lists(list_a, list_b))
 
 
 

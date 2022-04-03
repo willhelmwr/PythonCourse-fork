@@ -29,6 +29,14 @@ result = chars[:int(len(chars)/2)] + word + chars[int(len(chars)/2):]
 print(result)
 
 
+my_tuple = (1, 2, [3, 2, 5])
+# my_tuple[2] = 8
+
+print(my_tuple.count(2))
+
+
+
+
 
 
 

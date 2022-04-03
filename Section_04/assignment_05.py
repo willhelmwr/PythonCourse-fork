@@ -15,7 +15,11 @@ first3([1, 2, 3, 4, 5]) → False
 
 # Your Code Below:
 
-
+def first3(def_list):
+    if 6 in def_list[:4]:
+        return True
+    else:
+        return False
 
 
 
